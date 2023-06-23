@@ -7,22 +7,22 @@ int main(void) {
 		printf("Digite o nome da pessoa:\n");
 		fgets(NOME, sizeof(NOME), stdin); 
 
-		printf("Digite seu sal·rio:\n");
+		printf("Digite seu sal√°rio:\n");
 		scanf("%d", &SALARIO);
 		getchar(); 
 
 		if (SALARIO < 1300) {
-			printf("NOME: %sVALOR DA ALÕQUOTA: ISENTO\n", NOME);
+			printf("NOME: %sVALOR DA AL√çQUOTA: ISENTO\n", NOME);
 		}
 
 		if (SALARIO >= 1300 && SALARIO < 2300) {
 			int ALIQUOTA = SALARIO * 0.1;
-			printf("NOME: %sVALOR DA ALÕQUOTA: %d (10%%)\n", NOME, ALIQUOTA);
+			printf("NOME: %sVALOR DA AL√çQUOTA: %d (10%%)\n", NOME, ALIQUOTA);
 		}
 
 		if (SALARIO >= 2300) {
 			int ALIQUOTA = SALARIO * 0.15;
-			printf("NOME: %sVALOR DA ALÕQUOTA: %d (15%%)\n", NOME, ALIQUOTA);
+			printf("NOME: %sVALOR DA AL√çQUOTA: %d (15%%)\n", NOME, ALIQUOTA);
 		}
 	}
 	return 0;
