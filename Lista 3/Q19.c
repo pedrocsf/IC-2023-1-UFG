@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h> // incluÌda a biblioteca stdlib.h para usar a funÁ„o atoi()
+#include <stdlib.h> // inclu√≠da a biblioteca stdlib.h para usar a fun√ß√£o atoi()
 
 int main(void) {
     int NUM, PRECO_UNIT, QTD, PRECO_FINAL, i = 1;
     char DATA[100];
 
     do {
-        printf("Digite o n˙mero do pedido: ");
+        printf("Digite o n√∫mero do pedido: ");
         scanf("%d", &NUM);
         getchar(); 
 
         printf("Digite a data do pedido (DD MM AAAA): ");
         fgets(DATA, sizeof(DATA), stdin);
 
-        printf("Digite o preÁo unit·rio: ");
+        printf("Digite o pre√ßo unit√°rio: ");
         scanf("%d", &PRECO_UNIT);
         getchar(); 
 
@@ -22,9 +22,9 @@ int main(void) {
         getchar(); 
 
         PRECO_FINAL = QTD * PRECO_UNIT;
-        printf("O preÁo final do pedido em quest„o È de %d.\n", PRECO_FINAL);
+        printf("O pre√ßo final do pedido em quest√£o √© de %d.\n", PRECO_FINAL);
 
-        printf("Deseja iniciar um novo pedido?\n1 SIM \n2 N√O: ");
+        printf("Deseja iniciar um novo pedido?\n1 SIM \n2 N√ÉO: ");
         scanf("%d", &i);
         getchar(); 
     } while (i == 1);
