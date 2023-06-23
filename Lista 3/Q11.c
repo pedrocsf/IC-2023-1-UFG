@@ -20,14 +20,14 @@ int main(void) {
         MEDIA_ALUNO = (NOTA1 + NOTA2) / 2;
         MEDIA_TURMA += MEDIA_ALUNO; 
 
-        printf("Dados do aluno(a):\nNome: %s\nNota 1: %d\nNota 2: %d\nMédia: %d\n\n", NOME, NOTA1, NOTA2, MEDIA_ALUNO);
+        printf("Dados do aluno(a):\nNome: %s\nNota 1: %d\nNota 2: %d\nMÃ©dia: %d\n\n", NOME, NOTA1, NOTA2, MEDIA_ALUNO);
 
 
         while (getchar() != '\n');
     }
 
     MEDIA_TURMA /= 5; 
-    printf("Média da turma: %d\n", MEDIA_TURMA);
+    printf("MÃ©dia da turma: %d\n", MEDIA_TURMA);
 
     return 0;
 }
