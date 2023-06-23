@@ -13,7 +13,7 @@ do{
 		MAIOR_DE_50=MAIOR_DE_50+1;
 	}
 
-	printf("Deseja inserir outra idade:\n0 Sim\n1 Não");
+	printf("Deseja inserir outra idade:\n0 Sim\n1 NÃ£o");
 	scanf("%d", &CONT);
 }
 while(CONT!=1);
