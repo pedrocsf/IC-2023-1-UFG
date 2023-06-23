@@ -8,7 +8,7 @@ int main(void){
     CONT=CONT+1;
   }
    if(PAIS_A>PAIS_B){
-      printf("O país A demorará %d anos para ultrapassar a população do País B", CONT);
+      printf("O paÃ­s A demorarÃ¡ %d anos para ultrapassar a populaÃ§Ã£o do PaÃ­s B", CONT);
    }
   return 0;
 }
