@@ -11,7 +11,7 @@ do{
 	if(RENDA_PESSOAL>RENDA_FAMILIAR){
 		CONT2=CONT2+1;
 	}
-	printf("Digite o total gasto com alimentação pelo(a) aluno(a):");
+	printf("Digite o total gasto com alimentaÃ§Ã£o pelo(a) aluno(a):");
 	scanf("%d", &ALIMENTACAO);
 	
 	printf("Digite o total gasto com outras despesas pelo(a) aluno(a):");
@@ -23,7 +23,7 @@ do{
 	SOMA1=RENDA_PESSOAL+RENDA_FAMILIAR+SOMA1;
 	SOMA2=ALIMENTACAO+OUTROS+SOMA2;
 	
-	printf("Deseja inserir dados de outro aluno(a)?\n1 Sim\n 2Não");
+	printf("Deseja inserir dados de outro aluno(a)?\n1 Sim\n 2NÃ£o");
 	scanf("%d", &i);
 }
 while(i==1);
@@ -31,7 +31,7 @@ while(i==1);
 P1=(CONT1/CONT0)*100;
 P2=((SOMA2/(SOMA1+SOMA2))*100);
 printf("Porcentagem dos alunos que gasta acima de R$200,00 com outras despesas: %d\n", P1);
-printf("Número de alunos com renda pessoal maior que a renda familiar: %d\n", CONT2);
-printf("Porcentagem gasta com alimentação e outras despesas em relação às rendas pessoal e familiar: %d", P2);
+printf("NÃºmero de alunos com renda pessoal maior que a renda familiar: %d\n", CONT2);
+printf("Porcentagem gasta com alimentaÃ§Ã£o e outras despesas em relaÃ§Ã£o Ã s rendas pessoal e familiar: %d", P2);
 return 0;
 }
