@@ -4,7 +4,7 @@ int main() {
     int i, NUMERO, FATORIAL;
 
     do {
-        printf("Digite um número inteiro (digite um número menor que 1 para encerrar): ");
+        printf("Digite um nÃºmero inteiro (digite um nÃºmero menor que 1 para encerrar): ");
         scanf("%d", &NUMERO);
 
         if (NUMERO >= 1) {
@@ -12,7 +12,7 @@ int main() {
             for (i = 1; i <= NUMERO; i=i+1) {
                 FATORIAL = FATORIAL * i;
             }
-            printf("O fatorial de %d é: %d\n", NUMERO, FATORIAL);
+            printf("O fatorial de %d Ã©: %d\n", NUMERO, FATORIAL);
         }
     } while (NUMERO >= 1);
 
