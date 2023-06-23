@@ -7,7 +7,7 @@ int main(void) {
 		printf("Digite sua idade:\n");
 		scanf("%d", &IDADE);
 
-		printf("Digite a opini„o:\n 1 Regular\n 2 Bom\n 3 Excelente\n");
+		printf("Digite a opini√£o:\n 1 Regular\n 2 Bom\n 3 Excelente\n");
 		scanf("%d", &OPINIAO);
 
 		MEDIA_IDADE = MEDIA_IDADE + IDADE;
@@ -22,7 +22,7 @@ int main(void) {
 	MEDIA_IDADE = MEDIA_IDADE / 8
 	PORCENT_BOM = (PORCENT_BOM * 100) / 8
 
-	printf("MÈdia de idade: %d\nQuantidade de regular: %d\nPorcentagem de bom: %d%%\n", MEDIA_IDADE, QTD_REGULAR, PORCENT_BOM);
+	printf("M√©dia de idade: %d\nQuantidade de regular: %d\nPorcentagem de bom: %d%%\n", MEDIA_IDADE, QTD_REGULAR, PORCENT_BOM);
 	return 0;
 }
 
