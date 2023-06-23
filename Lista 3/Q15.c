@@ -1,10 +1,10 @@
 #include <stdio.h>
     int main(void) {
     int NUM, CONT=1, i, VALOR_DESEJADO=0;
-      printf("Digite quantos números você quer inserir?\n");
+      printf("Digite quantos nÃºmeros vocÃª quer inserir?\n");
       scanf("%d", &i);
       do{
-        printf("Digite um número:\n");
+        printf("Digite um nÃºmero:\n");
       scanf("%d", &NUM);
 		 CONT=CONT+1;
         if(NUM>=100&&NUM<=200){
@@ -15,6 +15,6 @@
 		}
       }
       while(CONT<=i);
-    printf("O número total de valores digitados que estão entre 100 e 200 é de %d", VALOR_DESEJADO);
+    printf("O nÃºmero total de valores digitados que estÃ£o entre 100 e 200 Ã© de %d", VALOR_DESEJADO);
   return 0;
 }
