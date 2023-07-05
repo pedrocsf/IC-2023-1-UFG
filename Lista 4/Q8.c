@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void) {
-    int N, i = 0, j = 0, QTD_UNICOS = 0;
+    int N, i, j, z, QTD_UNICOS = 0;
     printf("Digite o tamanho do vetor: ");
     scanf("%d", &N);
 
@@ -12,13 +13,13 @@ int main(void) {
     }
 
     for (j = 0; j < N; j++) {
-        int CONT = 0;
+        bool CONT = false;
         printf("Digite um valor para ser alocado dentro do vetor: ");
         scanf("%d", &VETOR[j]);
 
         for (i = 0; i < j; i++) {
-            if (VETOR[i] == VETOR[j]) {
-                CONT = 1;
+            if (VETOR[j] == VETOR[i]) {
+                CONT = true;
                 break;
             }
         }
@@ -27,6 +28,8 @@ int main(void) {
             QTD_UNICOS++;
         }
     }
+    
+    QTD_UNICOS=QTD_UNICOS-1;
 
     printf("Quantidade de números únicos inseridos no vetor: %d\n", QTD_UNICOS);
     return 0;
