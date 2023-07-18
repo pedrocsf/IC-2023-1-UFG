@@ -13,7 +13,10 @@ int main (void){
 	for(i=0;i<5;i++){
 		for(j=0;j<3;j++){
 		if((i+j)%2==0){
-			printf("%d ", MATRIZ[i][j]);
+		printf("%d ", MATRIZ[i][j]);
+			if(j==2){
+			printf("\n");
+			}
 		}
 		}
 	}
