@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void) {
-    char PLANTAS[20];
+    char PLANTAS[10][20];
     int ESTOQUE[10][2];
     int i, j;
 
