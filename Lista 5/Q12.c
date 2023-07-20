@@ -1,50 +1,40 @@
 #include <stdio.h>
+#include <string.h>
 
-int main (void){
-	int ALTURA[6];
-	char NOME[20];
-	int i;
-	
-	for(i=0;i<6;i++){
-		printf("Digite o nome do atleta:");
-		fgets(NOME, 20, stdin);
-	
-		printf("Digite a altura do atleta:");
-		scanf("%d", &ALTURA[i]);
-		
-		getchar();
-	}
-	
-	if(ALTURA[0]>ALTURA[1]){
-		printf("Nome do maior atleta: %s\nAltura do maior atleta: %d\n", NOME, ALTURA[0]);	
-	}
-	if(ALTURA[0]<ALTURA[1]){
-		printf("Nome do maior atleta: %s\nAltura do maior atleta: %d\n", NOME, ALTURA[1]);
-	}
-	if(ALTURA[0]==ALTURA[1]){
-		printf("Os atletas tem a mesma altura.\n");
-	}
-	
-	if(ALTURA[2]>ALTURA[3]){
-		printf("Nome do maior atleta: %s\nAltura do maior atleta: %d\n", NOME, ALTURA[2]);	
-	}
-	if(ALTURA[2]<ALTURA[3]){
-		printf("Nome do maior atleta: %s\nAltura do maior atleta: %d\n", NOME, ALTURA[3]);
-	}
-	if(ALTURA[2]==ALTURA[3]){
-		printf("Os atletas tem a mesma altura.\n");
-	}
-	
-	if(ALTURA[4]>ALTURA[5]){
-		printf("Nome do maior atleta: %s\nAltura do maior atleta: %d\n", NOME, ALTURA[4]);	
-	}
-	if(ALTURA[4]<ALTURA[5]){
-		printf("Nome do maior atleta: %s\nAltura do maior atleta: %d\n", NOME, ALTURA[5]);
-	}
-	if(ALTURA[4]==ALTURA[5]){
-		printf("Os atletas tem a mesma altura.\n");
-	}
-	
-	
-	return 0;
+int main() {
+    char NOMES[3][2][50];
+    float ALTURAS[3][2];
+
+    for (int i = 0; i < 3; i++) {
+        printf("Delegacao %d:\n", i+1);
+        for (int j = 0; j < 2; j++) {
+            printf("Digite o nome do atleta %d: ", j+1);
+            scanf("%s", NOMES[i][j]);
+
+            printf("Digite a altura do atleta %d: ", j+1);
+            scanf("%f", &ALTURAS[i][j]);
+        }
+    }
+
+    for (int i = 0; i < 3; i++) {
+        int indiceMaior = 0;
+        for (int j = 1; j < 2; j++) {
+            if (ALTURAS[i][j] > ALTURAS[i][indiceMaior]) {
+                indiceMaior = j;
+            }
+        }
+
+        printf("\nDelegacao %d - Maior atleta:\n", i+1);
+
+        for (int j = 0; j < 2; j++) {
+            if (ALTURAS[i][j] == ALTURAS[i][indiceMaior]) {
+                printf("Nome: %s\n", NOMES[i][j]);
+                printf("Altura: %.2f\n", ALTURAS[i][j]);
+            }
+        }
+    }
+
+    return 0;
 }
+
+
